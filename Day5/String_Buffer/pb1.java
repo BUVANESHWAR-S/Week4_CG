@@ -1,0 +1,21 @@
+package Day5.String_Buffer;
+
+public class pb1 {
+
+    public static String concatenateStrings(String[] strings) {
+        StringBuffer sb = new StringBuffer();
+
+        for (String str : strings) {
+            sb.append(str);
+        }
+
+        return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        String[] strings = {"Hello", " ", "World", "!"};
+        String result = concatenateStrings(strings);
+        System.out.println(result);  // Output: "Hello World!"
+    }
+}
+
